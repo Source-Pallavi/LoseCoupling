@@ -1,8 +1,12 @@
 package com.bridagelabz.MyFirstSpringProject.MyFirstSpringProject;
 
-public class BinarySearchAlgoImpl {
-    SortingAlog sortingAlog;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
+@Component
+public class BinarySearchAlgoImpl {
+    @Autowired
+    SortingAlog sortingAlog;
     public BinarySearchAlgoImpl(SortingAlog sortingAlog)
     {
         this.sortingAlog = sortingAlog;
